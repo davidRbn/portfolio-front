@@ -1,0 +1,132 @@
+#accueil {
+  min-height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+
+  /* background-size: contain; */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  /* background-position: right;
+  background-color: #303030;
+  background-image: url("../../assets/photosProfile3.jpg"); */
+  background-image: url("../../assets/fondHomeB.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* .containerHomePage::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #048b9a;
+  opacity: 0.3;
+} */
+
+.divTitlePara {
+  text-align: center;
+  /* margin: 10%; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-content: flex-start; */
+  align-content: center;
+  justify-content: center;
+}
+
+.divTitlePara .nameHomePage,
+.lastNameHomePage {
+  text-shadow: 0 5px 2px black;
+  color: white;
+  font-family: "DancingScript";
+  font-size: 50px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  /* animation: David 2s cubic-bezier(0, 1.62, 0.7, 0.85); */
+}
+
+.textHomePage {
+  /* color: #048b9a; */
+  text-shadow: 0 5px 2px black;
+  color: white;
+  font-size: 50px;
+  font-family: "DancingScript";
+}
+
+.lastNameHomePage {
+  margin-left: 10%;
+}
+
+/* @keyframes David {
+  from {
+    font-size: 0;
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+    font-size: 100px;
+  }
+} */
+
+.profileImage img {
+  width: 500px;
+}
+
+/* @media screen and (max-width: 900px) {
+  .containerHomePage {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .divTitlePara {
+    max-height: 50%;
+  }
+
+  .divTitlePara .nameHomePage,
+  .lastNameHomePage {
+    font-size: 80px;
+  }
+
+  .profileImage {
+    margin: auto;
+    max-height: 50%;
+  }
+
+  .profileImage img {
+    width: 40vh;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1100px) {
+  .containerHomePage {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .divTitlePara .nameHomePage,
+  .lastNameHomePage {
+    font-size: 150px;
+  }
+  .profileImage {
+    margin: auto;
+    max-height: 50%;
+  }
+  .profileImage img {
+    width: 40vh;
+  }
+} */
+@media screen and (max-width: 900px) {
+  .nameHomePage {
+    font-size: 30px !important;
+  }
+
+  .textHomePage {
+    margin: 0 40px;
+    font-size: 40px;
+  }
+}

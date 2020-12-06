@@ -1,0 +1,101 @@
+.containerNav {
+  position: absolute;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+}
+
+.containerNavScroll {
+  position: absolute;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  background-color: #048b9a;
+  transition: all 1s ease;
+}
+
+.menuNav {
+  display: flex;
+}
+
+.menuNav li,
+.menuNav a {
+  font-weight: bold;
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .containerMenuBurger {
+    position: absolute;
+    position: fixed;
+    cursor: pointer;
+    top: 5px;
+    left: 5px;
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+  }
+
+  .menuBurger {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 3px;
+    background-color: black;
+  }
+
+  .menuBurger::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+  }
+
+  .menuBurger::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+  }
+  .containerNav {
+    background-color: #048b9a;
+    width: 100%;
+    height: 160px;
+    z-index: 10;
+    transform: translateY(-160px);
+    transition: transform 0.3s;
+  }
+
+  .navBurger {
+    position: absolute;
+    position: fixed;
+    background-color: #048b9a;
+    width: 100%;
+    height: 160px;
+    z-index: 10;
+    transform: translateY(0);
+    transition: transform 0.3s;
+  }
+  .containerNavScroll {
+    display: none;
+  }
+  .menuNav {
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .menuNav li,
+  .menuNav a {
+    margin-top: 10px;
+  }
+}
