@@ -1,6 +1,5 @@
 import React from 'react'
 import './homePage.css'
-import photosProfile from '../../assets/photosProfile.jpg'
 import NavBar from '../navBar/NavBar'
 
 const HomePage = () => {
