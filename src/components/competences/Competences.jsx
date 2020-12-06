@@ -12,13 +12,7 @@ import logoGit from '../../assets/logoGit.png'
 const Competences = () => {
 
     const  [competences,setCompetences] = useState([])
-    const  [competences2,setCompetences2] = useState([])
-    const  [animImageComptence,setAnimImageCompetence] = useState(0)
     
-
-    useEffect(() => {
-        // countAnim()
-    },[])
 
     useEffect(() => {
         getCompetences()
@@ -29,20 +23,9 @@ const Competences = () => {
             Axios.get('https://blooming-beyond-04058.herokuapp.com/competence')
 
             .then(res =>{ setCompetences(res.data)
-                          setCompetences2(res.data)  
-            
+                            
             })
-        }
-        
-// const countAnim = () => {
-//     let i = 0
-//     setInterval(() => {
-//             i++
-//             setAnimImageCompetence(i)
-//          i === 5 ? i = 0 : i = i ;
-//     },1000)
-
-// }    
+        }  
 
     return(
         <div id='compétences'>
@@ -55,28 +38,28 @@ const Competences = () => {
           <div className="ligneCompetence"></div>
            <div className='container'>
           <div className='slide'>
-            <img className={animImageComptence === 1 ?'imageCompetenceAnim': 'imageCompetence'} src={logoCss} alt=""/>
-            <img className={animImageComptence === 2 ?'imageCompetenceAnim': 'imageCompetence'} src={logoHtml} alt=""/>
-            <img className={animImageComptence === 4 ?'imageCompetenceAnim': 'imageCompetence'} src={logoReact} alt=""/>
-            <img className={animImageComptence === 1 ?'imageCompetenceAnim': 'imageCompetence'} src={logoNode} alt=""/>
-            <img className={animImageComptence === 3 ?'imageCompetenceAnim': 'imageCompetence'} src={logoJs} alt=""/>
-            <img className={animImageComptence === 2 ?'imageCompetenceAnim': 'imageCompetence'} src={logoGit} alt=""/>
+            <img className='imageCompetence' src={logoCss} alt=""/>
+            <img className='imageCompetence' src={logoHtml} alt=""/>
+            <img className='imageCompetence' src={logoReact} alt=""/>
+            <img className='imageCompetence' src={logoNode} alt=""/>
+            <img className= 'imageCompetence' src={logoJs} alt=""/>
+            <img className='imageCompetence' src={logoGit} alt=""/>
             </div>
             <div className='slide'>
-            <img className={animImageComptence === 1 ?'imageCompetenceAnim': 'imageCompetence'} src={logoCss} alt=""/>
-            <img className={animImageComptence === 2 ?'imageCompetenceAnim': 'imageCompetence'} src={logoHtml} alt=""/>
-            <img className={animImageComptence === 4 ?'imageCompetenceAnim': 'imageCompetence'} src={logoReact} alt=""/>
-            <img className={animImageComptence === 1 ?'imageCompetenceAnim': 'imageCompetence'} src={logoNode} alt=""/>
-            <img className={animImageComptence === 3 ?'imageCompetenceAnim': 'imageCompetence'} src={logoJs} alt=""/>
-            <img className={animImageComptence === 2 ?'imageCompetenceAnim': 'imageCompetence'} src={logoGit} alt=""/>
+            <img className='imageCompetence' src={logoCss} alt=""/>
+            <img className='imageCompetence' src={logoHtml} alt=""/>
+            <img className='imageCompetence' src={logoReact} alt=""/>
+            <img className='imageCompetence' src={logoNode} alt=""/>
+            <img className= 'imageCompetence' src={logoJs} alt=""/>
+            <img className='imageCompetence' src={logoGit} alt=""/>
             </div>
             <div className='slide'>
-            <img className={animImageComptence === 1 ?'imageCompetenceAnim': 'imageCompetence'} src={logoCss} alt=""/>
-            <img className={animImageComptence === 2 ?'imageCompetenceAnim': 'imageCompetence'} src={logoHtml} alt=""/>
-            <img className={animImageComptence === 4 ?'imageCompetenceAnim': 'imageCompetence'} src={logoReact} alt=""/>
-            <img className={animImageComptence === 1 ?'imageCompetenceAnim': 'imageCompetence'} src={logoNode} alt=""/>
-            <img className={animImageComptence === 3 ?'imageCompetenceAnim': 'imageCompetence'} src={logoJs} alt=""/>
-            <img className={animImageComptence === 2 ?'imageCompetenceAnim': 'imageCompetence'} src={logoGit} alt=""/>
+            <img className='imageCompetence' src={logoCss} alt=""/>
+            <img className='imageCompetence' src={logoHtml} alt=""/>
+            <img className='imageCompetence' src={logoReact} alt=""/>
+            <img className='imageCompetence' src={logoNode} alt=""/>
+            <img className= 'imageCompetence' src={logoJs} alt=""/>
+            <img className='imageCompetence' src={logoGit} alt=""/>
             </div>
         </div>
         <div className='containerCompetence'>
