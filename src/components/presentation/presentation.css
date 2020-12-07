@@ -62,6 +62,7 @@
 
 .textPres {
   color: #5b5963;
+  font-weight: bolder;
   line-height: 40px;
 }
 
@@ -69,6 +70,7 @@
   .containerImagePres {
     display: none;
   }
+
   .containerTextPres {
     justify-content: space-between !important;
   }
@@ -80,7 +82,10 @@
     font-size: 30px;
   }
   .textPres {
+    text-align: center;
     margin: 0 42px;
     line-height: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 }

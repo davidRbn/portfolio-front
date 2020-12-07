@@ -103,6 +103,7 @@
   }
   .container {
     width: 80%;
+    margin-bottom: 0;
   }
 
   .imageCompetence {
