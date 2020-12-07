@@ -118,7 +118,6 @@
 @media screen and (max-width: 900px) {
   .containerGlobalImageProjet {
     flex-direction: column-reverse;
-    align-items: center;
     padding: 0;
   }
   .sousTitreProjet {
@@ -131,10 +130,20 @@
     font-size: 25px;
   }
   .containerImageProjet {
-    width: 100%;
-    text-align: center;
+    margin: auto;
+    width: 90%;
   }
   .imageProjet {
+    width: 100%;
+  }
+
+  .containTextProjet {
+    margin: auto;
+  }
+  .containerImageProjet:hover .containerDescriptionProjet {
+    opacity: 1;
+    top: 5%;
+    left: 5%;
     width: 90%;
   }
 }
