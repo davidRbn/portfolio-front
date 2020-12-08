@@ -38,15 +38,15 @@ const cli = (e) => {
             <ul className="menuNav" >
                
                 <li><a onClick={e => {cli(e)
-                                     window.location.href='#accueil'}}>Accueil</a></li>
+                                     window.location.href='#accueil'}} href='#accueil'>Accueil</a></li>
                 <li><a onClick={e =>{ cli(e)
-                                      window.location.href = '#présentation'}}>Présentation</a></li>
+                                      window.location.href = '#présentation'}}href='#présentation'>Présentation</a></li>
                 <li> <a onClick={e =>{ cli(e)
-                                      window.location.href ='#projets'}}>Projets</a></li>
+                                      window.location.href ='#projets'}}href='#projets'>Projets</a></li>
                 <li><a onClick={e =>{ cli(e)
-                                      window.location.href ='#compétences'}}>Compétences</a></li>
+                                      window.location.href ='#compétences'}}href='#compétences'>Compétences</a></li>
                 <li><a onClick={e =>{ cli(e)
-                                      window.location.href ='#contact'}} >Contact</a></li>
+                                      window.location.href ='#contact'}} href='#contact'>Contact</a></li>
                 
             </ul>
 
