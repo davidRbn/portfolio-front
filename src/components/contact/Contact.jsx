@@ -10,6 +10,7 @@ const Contact = () => {
         email : '',
         message : ''
     })
+    const [confirmEmail,setConfirmEmail] = useState(false)
             
         
     const sendEmail = (e) => {
@@ -24,7 +25,9 @@ const Contact = () => {
          const template_id = "portfolio";
          emailjs.send(service_id, template_id,template_params,user_id)
          .then((result) => {
-            console.log(result.text);
+            // console.log(result);
+            result.status === 200 && setConfirmEmail(true)
+
         }, (error) => {
             console.log(error.text);
         });
@@ -46,13 +49,10 @@ const Contact = () => {
                 </div>
                    <form id='formulaire' onSubmit={sendEmail}>
                          {/* <input type="hidden" name="contact_number" /> */}
-                            
-                                <input name="name" placeholder='Nom' value={email.name} required type='text' onChange={e => setEmail({...email,name : e.target.value})} />
-                                    
+                                        <input name="name" placeholder='Nom' value={email.name} required type='text' onChange={e => setEmail({...email,name : e.target.value})} />
                                         <input  name="email" placeholder='Email' value={email.email} required type="email" onChange={e => setEmail({...email,email : e.target.value })}/>
-                                
                             <textarea name="message" placeholder='Votre message' value={email.message} required type='text' onChange={e => setEmail({...email,message : e.target.value})} />
-                    <input className='boutonEmail' type="submit" value='Envoyer'/>
+                    <input className={confirmEmail ? 'boutonEmailEnvoyé' :'boutonEmail'} type="submit" value={confirmEmail ?'Envoyé' :'Envoyer'}/>
                 </form>
                 </div>
                 

@@ -121,6 +121,9 @@
   }
 } */
 @media screen and (max-width: 900px) {
+  #accueil {
+    background-attachment: initial;
+  }
   .nameHomePage {
     font-size: 30px !important;
   }

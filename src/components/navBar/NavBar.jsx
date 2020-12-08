@@ -21,7 +21,8 @@ window.addEventListener('scroll',(e) => {
 }
 const cli = (e) => {
     e.preventDefault()
-     setClickBurger(!clickBurger)
+        setClickBurger(!clickBurger)
+  
  }
 
 
@@ -34,13 +35,18 @@ const cli = (e) => {
         </div>
         <nav className={scrollNav ? 'containerNavScroll':clickBurger ?'navBurger': 'containerNav'}>
         
-            <ul className="menuNav">
+            <ul className="menuNav" >
                
-                <li><a href='#accueil'>Accueil</a></li>
-                <li><a href='#présentation'>Présentation</a></li>
-                <li> <a href='#projets'>Projets</a></li>
-                <li><a href='#compétences'>Compétences</a></li>
-                <li><a href='#contact'>Contact</a></li>
+                <li><a onClick={e => {cli(e)
+                                     window.location.href='#accueil'}}>Accueil</a></li>
+                <li><a onClick={e =>{ cli(e)
+                                      window.location.href = '#présentation'}}>Présentation</a></li>
+                <li> <a onClick={e =>{ cli(e)
+                                      window.location.href ='#projets'}}>Projets</a></li>
+                <li><a onClick={e =>{ cli(e)
+                                      window.location.href ='#compétences'}}>Compétences</a></li>
+                <li><a onClick={e =>{ cli(e)
+                                      window.location.href ='#contact'}} >Contact</a></li>
                 
             </ul>
 
