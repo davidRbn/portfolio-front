@@ -75,7 +75,7 @@
 
 .boutonEmailEnvoyé {
   pointer-events: none;
-  border: 2px solid #008000;
+  /* border: 2px solid #008000; */
   background-color: #008000;
 }
 
