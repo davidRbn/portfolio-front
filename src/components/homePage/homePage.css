@@ -40,7 +40,7 @@
 .divTitlePara .nameHomePage,
 .lastNameHomePage {
   text-shadow: 0 5px 2px black;
-  color: white;
+  color: red;
   font-family: "DancingScript";
   font-size: 50px;
   margin-bottom: 10px;
