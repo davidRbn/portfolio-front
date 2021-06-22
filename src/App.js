@@ -16,10 +16,6 @@ function App() {
   const [projets,setProjets] = useState([])
 
 
-  const handleLoader = (loader) => {
-     isLoading ? setIsLoading(true) : setIsLoading(false)
-
-  }
   const getProjet = () => {
 
     Axios.get('https://blooming-beyond-04058.herokuapp.com/projet')
