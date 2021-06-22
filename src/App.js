@@ -36,7 +36,7 @@ useEffect(()=> {
   return (
     <>
       
-    { true ?  <LoaderLogoD/>:
+    { !isLoading ?  <LoaderLogoD/>:
       
       <>
            <BanniereLogo/>
