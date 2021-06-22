@@ -22,7 +22,7 @@ console.log(position);
 
 useEffect(() => {
     scrollPos()
-},[scrollPos()])
+},[])
 
 const cli = (e) => {
     e.preventDefault()
