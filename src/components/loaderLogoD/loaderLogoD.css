@@ -8,7 +8,7 @@
 }
 
 .imgLogoD {
-  height: 20vmin;
+  height: 15vmin;
   width: 100px;
   animation: App-logo-spin infinite 20s linear;
 }
@@ -19,5 +19,11 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .imgLogoD {
+    height: 30vmin;
   }
 }
