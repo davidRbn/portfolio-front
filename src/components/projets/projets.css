@@ -117,6 +117,15 @@
 }
 
 @media screen and (max-width: 900px) {
+  .containerBetween {
+    background-image: url("../../assets/fondProjet.jpg");
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: initial;
+  }
   .containerGlobalImageProjet {
     flex-direction: column-reverse;
     padding: 0;
