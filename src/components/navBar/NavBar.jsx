@@ -6,25 +6,29 @@ const NavBar = () => {
 const [scrollNav, setScrollNav] = useState(false)
 const [clickBurger, setClickBurger] = useState(false)
 
-useEffect(() => {
-    scrollPos()
-},[])
+
 
 const scrollPos = () => {
     let position = 0
 window.addEventListener('scroll',(e) => {
     position = e.target.scrollingElement.scrollTop
+console.log(position);
+
     return position !== 0 && window.innerWidth > 900 ? setScrollNav(true) : setScrollNav(false);
     
 })
  
 }
+
+useEffect(() => {
+    scrollPos()
+},[scrollPos()])
+
 const cli = (e) => {
     e.preventDefault()
         setClickBurger(!clickBurger)
   
  }
-
 
 
  return(
@@ -33,7 +37,7 @@ const cli = (e) => {
         <div className="containerMenuBurger" onClick={e => cli(e)}>
         <div className="menuBurger"></div>
         </div>
-        <nav className={scrollNav ? 'containerNavScroll':clickBurger ?'navBurger': 'containerNav'}>
+        <nav className={scrollNav ? 'containerNavScroll':clickBurger && window.innerWidth < 900 ?'navBurger': 'containerNav'}>
         
             <ul className="menuNav" >
                
