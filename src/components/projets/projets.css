@@ -1,8 +1,8 @@
 .containerBetween {
   background-image: url("../../assets/fondProjet.jpg");
   background-attachment: fixed;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
