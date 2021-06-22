@@ -1,24 +1,25 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import './projets.css'
-import Axios from 'axios'
 
 
 
-const Projets = () => {
+const Projets = ({projets}) => {
 
-    const [projets,setProjets] = useState([])
 
-useEffect(()=> {
-    getProjet()
-},[])
+// useEffect(()=> {
+//     getProjet()
+// },[])
 
-const getProjet = () => {
+// const getProjet = () => {
 
-    Axios.get('https://blooming-beyond-04058.herokuapp.com/projet')
+//     Axios.get('https://blooming-beyond-04058.herokuapp.com/projet')
         
-    .then(res => setProjets(res.data))
+//     .then(res => {
+//         setProjets(res.data)
+//         handleLoader(true)
+//     })
     
-}  
+// }  
     return(
         <>
        <div className="containerBetween">
