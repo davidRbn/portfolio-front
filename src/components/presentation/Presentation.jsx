@@ -9,7 +9,7 @@ const Presentation = () => {
     
     
     return(
-        <>
+        
             <div id="présentation">
                 <div className="containerImagePres">
                      <img className="imagePres" src={imageProfil} alt='imageDavidRuben'/>
@@ -27,7 +27,7 @@ const Presentation = () => {
             </div>
 
         </div>
-        </>
+        
     )
 }
 

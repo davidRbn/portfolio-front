@@ -8,6 +8,7 @@ import HomePage from './components/homePage/HomePage';
 import LoaderLogoD from './components/loaderLogoD/LoaderLogoD';
 import Presentation from './components/presentation/Presentation';
 import Projets from './components/projets/Projets';
+import React from 'react'
 
 function App() {
 
@@ -32,13 +33,13 @@ useEffect(()=> {
   getProjet()
 },[])
 
- console.log(isLoading);
+
   return (
-    <>
-      
+    
+      <div>
     { !isLoading ?  <LoaderLogoD/>:
       
-      <>
+      <div>
            <BanniereLogo/>
            <HomePage/>
            <Presentation/>
@@ -46,8 +47,9 @@ useEffect(()=> {
            <Competences/>
            <Contact/>
   
-        </>}
-      </> 
+        </div>}
+      
+      </div>
   
   );
 }

@@ -21,7 +21,7 @@ const Projets = ({projets}) => {
     
 // }  
     return(
-        <>
+        
        <div className="containerBetween">
         <div id='projets'>
              <div className='containerTitreProjet'>
@@ -53,7 +53,7 @@ const Projets = ({projets}) => {
 
         </div>
         </div>
-        </>
+        
     )
 }
 

@@ -13,7 +13,7 @@ const BanniereLogo = () => {
 
 
     return(
-        <>
+        
         <div className="banniereLogo">
         <a href='https://www.linkedin.com/in/david-ruben/'>
                 <img alt='LinkedIn' src={Linkedin} />
@@ -25,7 +25,7 @@ const BanniereLogo = () => {
                 <img alt='LinkedIn' src={Cv} />
                 </a>
         </div>
-        </>
+        
     )
 }
 

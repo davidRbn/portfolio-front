@@ -6,7 +6,7 @@ const HomePage = () => {
 
 
     return(
-        <>
+        <div style={{height:'100vh'}}>
         <NavBar/>
         <div id='accueil'>
             <div className='divTitlePara'>
@@ -22,7 +22,7 @@ const HomePage = () => {
                     <img src={photosProfile} alt="image David Ruben"/>
                 </div> */}
         </div>
-        </>
+        </div>
     )
 }
 

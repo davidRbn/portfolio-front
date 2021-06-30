@@ -12,7 +12,6 @@ const scrollPos = () => {
     let position = 0
 window.addEventListener('scroll',(e) => {
     position = e.target.scrollingElement.scrollTop
-console.log(position);
 
     return position !== 0 && window.innerWidth > 900 ? setScrollNav(true) : setScrollNav(false);
     
@@ -33,7 +32,7 @@ const cli = (e) => {
 
  return(
         
-        <>
+        <div>
         <div className="containerMenuBurger" onClick={e => cli(e)}>
         <div className="menuBurger"></div>
         </div>
@@ -55,7 +54,7 @@ const cli = (e) => {
             </ul>
 
         </nav>
-</>
+</div>
         
 
         
